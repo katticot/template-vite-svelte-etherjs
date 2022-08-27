@@ -1,6 +1,7 @@
 <script>
     import logo from './assets/svelte.png'
     import Counter from './lib/Counter.svelte'
+    import TailwindCss from './TailwindCSS.svelte';
     import {Card, StarRating} from 'attractions';
     import Fa from 'svelte-fa'
     import {faGem} from '@fortawesome/free-solid-svg-icons'
@@ -40,9 +41,9 @@
 
     let promise = balance()
 </script>
+<TailwindCss/>
 
-
-<main>
+<main class="max-w mx-auto px-4 bg-blue-900 shadow-lg hover:bg-white">
     <img src={logo} alt="Svelte Logo"/>
     <h1>Hello Typescript!</h1>
 
